@@ -36,7 +36,7 @@ function App() {
 
 	return (
 		<>
-			<button disabled={points.length === 0} onClick={undo}>Undo</button>
+			<button disabled={points.length === 0} onClick={undo} style={{marginLeft: "10px", marginRight: "15px"}}>Undo</button>
 			<button disabled={popped.length === 0} onClick={redo}>Redo</button>
 			<div className="App" onClick={placeCircle}>
 				{points.map((point, index) =>(
